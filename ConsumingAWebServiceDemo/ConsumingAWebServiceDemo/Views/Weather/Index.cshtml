@@ -1,0 +1,24 @@
+﻿@model ConsumingAWebServiceDemo.DAL.Models.Weather
+
+
+<h2>Weather Forcast</h2>
+
+<p>Enter the name of the Country you want to weather of: ex: Australia</p>
+<!-- Search is your action and Events is your controller -->
+@using (Html.BeginForm("Index", "Weather"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.country, new { @class = "control-label col-md-2", @id = "countryTextBox"})
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.country)
+            @Html.ValidationMessageFor(model => model.country)
+        </div>
+     </div>
+    <input type="submit" value="Go" class="btn-info btn" />
+}
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

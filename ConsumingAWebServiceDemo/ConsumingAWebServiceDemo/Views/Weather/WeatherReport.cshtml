@@ -1,0 +1,84 @@
+﻿@model ConsumingAWebServiceDemo.DAL.Models.WeatherReport
+
+
+<h2>Weather Report</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.wind)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.wind)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.visibility)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.visibility)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.skyConditions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.skyConditions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.temperature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.temperature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dewpoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dewpoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relativeHumidity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relativeHumidity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pressure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pressure)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Back to Weather Forcast", "Index", "Weather", null, new { @class = "btn btn-primary" })
+</div>

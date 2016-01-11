@@ -1,0 +1,23 @@
+﻿
+<div>
+    <br />
+    <p><b>Country:</b> &nbsp; @ViewBag.country</p>
+</div>
+<h2>Get the weather of the City</h2><br />
+<p>Ex: Canberra</p>
+@using (Html.BeginForm("GetTheWeatherOfCity", "Weather"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <div>
+            @Html.DropDownList("dropDownList", (IEnumerable<SelectListItem>)ViewBag.cityList)
+        </div>
+    </div>
+    <input type="submit" value="Go" class="btn-info btn" />
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
