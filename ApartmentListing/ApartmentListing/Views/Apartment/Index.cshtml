@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ApartmentListing.DAL.Models.Apartment>
+
+
+<h2>Apartment List</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Suburb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bathrooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Carports)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Suburb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rooms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bathrooms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Carports)
+        </td>
+        <td>
+            @Html.ActionLink("More Details", "FindByID", new { id = item.ID })
+        </td>
+    </tr>
+}
+
+</table>

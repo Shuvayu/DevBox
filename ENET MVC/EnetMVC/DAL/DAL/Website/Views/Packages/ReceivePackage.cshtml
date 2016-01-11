@@ -1,0 +1,114 @@
+﻿@model Website.ViewModels.PackageViewModel
+
+@{
+    ViewBag.Title = "Receive Package";
+}
+
+<h2>SendPackage</h2>
+
+<div>
+    <h4>PackageViewModel</h4>
+    <hr />
+
+    @using (Html.BeginForm("ReceivePackagewithModel", "Packages"))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <div class="col-md-4">Please scan the Bar Code</div>
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.BarcodeId, null, new { htmlAttributes = new { @class = "form-control", @id = "lblBarcode" }, })
+                @Html.ValidationMessageFor(model => model.BarcodeId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="details well" style="display: none">
+            <div class="container">
+                <dl class="dl-horizontal">
+
+
+                    <dt>Name:</dt>
+                    <dd>
+                        @Html.LabelFor(model => model.Medicine.MedicineName, new { htmlAttributes = new { @class = "form-control" }, @id = "lblName" })
+                    </dd>
+
+                    <dt>Description:</dt>
+                    <dd>
+                        @Html.LabelFor(model => model.Medicine.Description, new { htmlAttributes = new { @class = "form-control" }, @id = "lblmedicineDesc" })
+                    </dd>
+
+                    <dt>Expiry:</dt>
+                    <dd>
+                        @Html.LabelFor(model => model.ExpiryDate, new { htmlAttributes = new { @class = "form-control" }, @id = "lblExpiry" })
+                    </dd>
+                    <dt>Is Temp Sensitive:</dt>
+                    <dd>
+                        @Html.LabelFor(model => model.Medicine.IstempSensitve, new { htmlAttributes = new { @class = "form-control" }, @id = "lbltemp" })
+                    </dd>
+                    <dt>Price :</dt>
+                    <dd>
+                        @Html.LabelFor(model => model.Medicine.Value, new { htmlAttributes = new { @class = "form-control" }, @id = "lblValue" })
+                    </dd>
+                  
+                   
+
+                </dl>
+
+
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Receive" class="btn btn-default" />
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    }
+    @Html.Partial("~/Views/_AlertPartial.cshtml")
+
+
+
+    <div style="display: none" class="alert alert-dismissable notfound alert-danger">
+        Package Not Found!
+    </div>
+
+
+
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $('#lblBarcode').change(function () {
+            debugger;
+            var selected = $('#lblBarcode').val();
+            $.post('@Url.Action("GetPackageForTransit", "Packages")', { barcode: selected }, function (data) {
+                debugger;
+                if (data.PackageId===-1) {
+                    $('.notfound').show();
+                    return;
+                }
+                $('.details').show();
+                $('#lblName').text(data.MedicineName);
+                $('#lblmedicineDesc').text(data.Description);
+                $('#lblExpiry').text(data.Expiry);
+                $('#lbltemp').text(data.IstempSensitve);
+                $('#lblValue').text(data.Value);
+            });
+
+        });
+    </script>
+
+
+
+}

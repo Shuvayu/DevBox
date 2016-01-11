@@ -1,0 +1,56 @@
+﻿    @model List<Website.ViewModels.DCLossReportViewModel>
+
+    <div class="form-horizontal">
+        <h1>Distribution Center Losses</h1>
+        <hr />
+
+        <table class="table">
+            <tr>
+
+                <th>
+                    DistributionCenter @*@Html.DisplayNameFor(model => model.DistributionCenterId)*@
+                </th>
+                <th>
+                    TotalLostORDiscardedPackages @*@Html.DisplayNameFor(model => model.Name)*@
+                </th>
+                <th>
+                    TotalLostORDiscardedORDistributedPackages @*@Html.DisplayNameFor(model => model.IsHead)*@
+                </th>
+                <th>
+                    TotalLostORDiscardedValue @*@Html.DisplayNameFor(model => model.Address)*@
+                </th>
+                <th>
+                    TotalLostORDiscardedORDIstributedValue
+                </th>
+                <th>
+                    LossRatio
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DistributionCenter)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalLostORDiscardedPackages)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalLostORDiscardedORDistributedPackages)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalLostORDiscardedValue)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalLostORDiscardedORDIstributedValue)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LossRatio)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>

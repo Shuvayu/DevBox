@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B0DDA8D0-79C2-4B64-90DA-B9140663A910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{B1E9205C-EAFC-43F8-9BC0-E8688005F8F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{53C34C90-5C3A-4D5B-9C8D-83E04C0F8B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website.Tests", "Website.Tests\Website.Tests.csproj", "{D6E81406-A6A8-4E7C-AA04-99C7B6872921}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bajju.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAL\\DAL.csproj
+		SccProjectName1 = DAL
+		SccLocalPath1 = DAL
+		SccProjectUniqueName2 = Domain\\Domain.csproj
+		SccProjectName2 = Domain
+		SccLocalPath2 = Domain
+		SccProjectUniqueName3 = Website.Tests\\Website.Tests.csproj
+		SccProjectName3 = Website.Tests
+		SccLocalPath3 = Website.Tests
+		SccProjectUniqueName4 = Website\\Website.csproj
+		SccProjectName4 = Website
+		SccLocalPath4 = Website
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0DDA8D0-79C2-4B64-90DA-B9140663A910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0DDA8D0-79C2-4B64-90DA-B9140663A910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0DDA8D0-79C2-4B64-90DA-B9140663A910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0DDA8D0-79C2-4B64-90DA-B9140663A910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E9205C-EAFC-43F8-9BC0-E8688005F8F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E9205C-EAFC-43F8-9BC0-E8688005F8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E9205C-EAFC-43F8-9BC0-E8688005F8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E9205C-EAFC-43F8-9BC0-E8688005F8F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C34C90-5C3A-4D5B-9C8D-83E04C0F8B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C34C90-5C3A-4D5B-9C8D-83E04C0F8B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C34C90-5C3A-4D5B-9C8D-83E04C0F8B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C34C90-5C3A-4D5B-9C8D-83E04C0F8B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E81406-A6A8-4E7C-AA04-99C7B6872921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E81406-A6A8-4E7C-AA04-99C7B6872921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E81406-A6A8-4E7C-AA04-99C7B6872921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E81406-A6A8-4E7C-AA04-99C7B6872921}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

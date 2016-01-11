@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Website.ViewModels.PackageViewModel>
+
+<div class="form-horizontal">
+    <h1>Global Stock</h1>
+    <hr />
+
+    <table class="table">
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine.MedicineName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BarcodeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegisteredOn)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.TransitState)
+            </th>
+
+
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Medicine.MedicineName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BarcodeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExpiryDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegisteredOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransitState)
+                </td>
+
+              
+            </tr>
+        }
+
+    </table>
+
+
+</div>

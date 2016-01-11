@@ -1,0 +1,67 @@
+﻿@model ApartmentListing.DAL.Models.Apartment
+
+<div class="container">
+    <div class="row">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true)
+                <h2>Search for Apartments</h2>
+                <hr />
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Address, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Address)
+                        @Html.ValidationMessageFor(model => model.Address)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.City, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.City)
+                        @Html.ValidationMessageFor(model => model.City)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Suburb, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Suburb)
+                        @Html.ValidationMessageFor(model => model.Suburb)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Rooms, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Rooms)
+                        @Html.ValidationMessageFor(model => model.Rooms)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Bathrooms, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Bathrooms)
+                        @Html.ValidationMessageFor(model => model.Bathrooms)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Carports, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Carports)
+                        @Html.ValidationMessageFor(model => model.Carports)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Search" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

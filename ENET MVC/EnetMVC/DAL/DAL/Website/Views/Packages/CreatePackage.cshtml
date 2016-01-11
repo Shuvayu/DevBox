@@ -1,0 +1,106 @@
+﻿@model Website.ViewModels.PackageViewModel
+
+@{
+    ViewBag.Title = "CreatePackage";
+}
+
+<h2>CreatePackage</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>PackageViewModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+      
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MedicineId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.MedicineId,null,"--Select--", new { htmlAttributes = new { @class = "form-control" ,@id= "ddlmedicineId" }, })
+                @Html.ValidationMessageFor(model => model.MedicineId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            @Html.LabelFor(model => model.Medicine.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.LabelFor(model => model.Medicine.Description, new { htmlAttributes = new { @class = "form-control" },@id="lblmedicineDesc" })
+                
+            </div>
+        </div>
+     
+      
+        <div class="form-group">
+            @Html.LabelFor(model => model.Medicine.Expiry, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ExpiryDate, new { htmlAttributes = new { @class = "form-control" }, @id = "lblExpiry" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Medicine.IstempSensitve, htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.LabelFor(model => model.Medicine.IstempSensitve, new {htmlAttributes = new {@class = "form-control"}, @id = "lbltemp"})
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Medicine.Value, htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.LabelFor(model => model.Medicine.Value, new {htmlAttributes = new {@class = "form-control"}, @id = "lblValue"})
+
+            </div>
+        </div>
+        @if (TempData["Success"] != null)
+        {
+            <div class="form-group">
+                <div>
+                    <div class="alert alert-success">@TempData["Success"]
+                        <img src="@ViewBag.URL" />  
+                    </div>
+                  
+                  @*<img src="~/Content/8229196847.jpg" />*@
+                  
+                </div>
+            </div>
+        }
+      
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $('#MedicineId').change(function () {
+            debugger;
+            var selected = $('#MedicineId').val();
+            $.post('@Url.Action("GetMedicine", "Medicines")', { id: selected }, function (data) {
+                debugger;
+                alert('pass');
+                $('#lblmedicineDesc').text(data.Description);
+                $('#lblExpiry').val(data.Expiry);
+                $('#lbltemp').text(data.IstempSensitve);
+                $('#lblValue').text(data.Value);
+            });
+        });
+    </script>
+
+    
+    
+}

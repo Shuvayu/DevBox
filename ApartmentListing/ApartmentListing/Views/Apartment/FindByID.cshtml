@@ -1,0 +1,47 @@
+﻿@model ApartmentListing.DAL.Models.Apartment
+
+<h2>Individual Listing</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Suburb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Suburb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rooms)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rooms)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bathrooms)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bathrooms)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Carports)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Carports)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Apartment Listings", "Index")
+</p>

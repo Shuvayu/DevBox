@@ -1,0 +1,17 @@
+﻿
+@if (TempData["fail"] != null)
+{
+    <p>
+        <div class="alert alert-error">
+            <a href="#" class="close" data-dismiss="alert">×</a>@TempData["fail"]
+        </div>
+    </p>
+}
+@if (TempData["success"] != null)
+{
+    <p>
+        <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert">×</a>@TempData["success"]
+        </div>
+    </p>
+}

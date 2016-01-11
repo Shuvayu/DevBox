@@ -1,0 +1,42 @@
+﻿@model List<Website.ViewModels.ValueReportViewModel>
+
+        <div class="form-horizontal">
+            <h1>Value in transit</h1>
+            <hr />
+
+            <table class="table">
+                <tr>
+
+                    <th>
+                        From 
+                    </th>
+                    <th>
+                        To
+                    </th>
+                    <th>
+                        Count
+                    </th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FromLocation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ToLocation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Count)
+                        </td>
+                    </tr>
+                }
+                <tr>
+
+            </table>
+
+
+
+        </div>

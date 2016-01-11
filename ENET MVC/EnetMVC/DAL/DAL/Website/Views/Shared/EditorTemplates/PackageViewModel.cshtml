@@ -1,0 +1,113 @@
+﻿@model Website.ViewModels.PackageViewModel
+
+@{
+    ViewBag.Title = "PackageViewModel";
+}
+
+<h2>PackageViewModel</h2>
+
+<div>
+    <h4>PackageViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+      
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BarcodeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BarcodeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </dt>
+
+        <dd>
+            
+                @if (model=> model.ExpiryDate - DateTime.Now < new TimeSpan(7, 0, 0, 0) && item.ExpiryDate - DateTime.Now > new TimeSpan(0, 0, 0, 0))
+                {
+                    <div style="color: orange">
+                        @Html.DisplayFor(modelItem => item.ExpiryDate)
+                    </div>
+                }
+                else if (item.ExpiryDate - DateTime.Now < new TimeSpan(0, 0, 0, 0))
+                {
+                    <div style="color: red">
+                        @Html.DisplayFor(modelItem => item.ExpiryDate)
+                    </div>
+
+                }
+                else
+                {
+                    @Html.DisplayFor(modelItem => item.ExpiryDate)
+                }
+
+
+
+            
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransitState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransitState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageStatusId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageStatusId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentLocationId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentLocationId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Found)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Found)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

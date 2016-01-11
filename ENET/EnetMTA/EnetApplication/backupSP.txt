@@ -1,0 +1,33 @@
+USE [dbEnet]
+GO
+
+/****** Object:  StoredProcedure [dbo].[spGetPackageInfo]    Script Date: 23-Apr-15 8:31:37 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[spGetPackageInfo]
+(
+	@Barcode varchar(10)
+)
+AS
+BEGIN
+	
+	SET NOCOUNT ON;
+
+    SELECT tblPackage.MedicineID, tblPackage.RegisteredAt, tblPackage.RegisteredBy, tblPackage.RegisteredOn, tblPackage.ExpiryDate, tblMedicineMaster.Description, tblMedicineMaster.MedicineName
+	FROM tblPackage INNER JOIN tblMedicineMaster ON tblPackage.MedicineID = tblMedicineMaster.MedicineID
+	WHERE tblPackage.BarcodeID = @Barcode
+END
+
+GO
+
+
+

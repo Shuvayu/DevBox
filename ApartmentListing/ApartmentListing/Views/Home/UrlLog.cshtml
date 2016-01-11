@@ -1,0 +1,15 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "UrlLog";
+}
+
+<h2>Log of all the URLs visited by the User</h2>
+<hr />
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+              @Html.DisplayFor(modelItem => item)<br />
+        }
+    </div>
+</div>

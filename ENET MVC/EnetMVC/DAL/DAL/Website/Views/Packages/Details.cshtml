@@ -1,0 +1,98 @@
+﻿@model Website.ViewModels.PackageViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PackageViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicineId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicineId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BarcodeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BarcodeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpiryDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransitState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransitState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageStatusId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageStatusId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentLocationId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentLocationId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,139 @@
+﻿@using Microsoft.Ajax.Utilities
+@model IEnumerable<Website.ViewModels.PackageViewModel>
+
+@{
+    ViewBag.Title = "Current Stock ";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreatePackage")
+</p>
+@using (Html.BeginForm(Model.ToList()))
+{
+    @Html.AntiForgeryToken()
+
+<table class="table">
+    <tr>
+        <th>
+
+            @Html.DisplayNameFor(model => model.Found)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Medicine.MedicineName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BarcodeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegisteredOn)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.TransitState)
+        </th>
+
+
+
+        <th></th>
+    </tr>
+
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+  
+    
+   
+        <tr>
+            <td>
+                @Html.DisplayFor(model=>Model.ToList()[i].Found,new {@id="chkFound"+Model.ToList()[i].BarcodeId})
+            </td>
+            <td>
+                @Html.DisplayFor(model => Model.ToList()[i].Medicine.MedicineName)
+            </td>
+            <td>
+               
+                @Html.DisplayFor(model => Model.ToList()[i].BarcodeId,new {@class="barcodes"})
+            </td>
+            <td>
+                @if (Model.ToList()[i].ExpiryDate - DateTime.Now < new TimeSpan(7, 0, 0, 0) && Model.ToList()[i].ExpiryDate - DateTime.Now > new TimeSpan(0, 0, 0, 0))
+                {
+                    <div style="color: orange">
+                        @Html.DisplayFor(model => Model.ToList()[i].ExpiryDate)
+                    </div>
+                }
+                else if (Model.ToList()[i].ExpiryDate - DateTime.Now < new TimeSpan(0, 0, 0, 0))
+                {
+                    <div style="color: red">
+                        @Html.DisplayFor(model => Model.ToList()[i].ExpiryDate)
+                    </div>
+
+                }
+                else
+                {
+                    @Html.DisplayFor(model => Model.ToList()[i].ExpiryDate)
+                }
+
+
+
+            </td>
+            <td>
+                @Html.DisplayFor(model => Model.ToList()[i].RegisteredOn)
+            </td>
+            <td>
+                @Html.DisplayFor(model => Model.ToList()[i].TransitState)
+            </td>
+
+            <td>
+                @Html.ActionLink("Discard", "Discard", new { id = Model.ToList()[i].BarcodeId }) |
+              
+            </td>
+        </tr>
+    }
+
+
+
+
+</table>
+<div class="form-group">
+    <div class="col-md-4">Please scan the Bar Code</div>
+    <div class="col-md-8">
+        <input class="input-lg input " id="lblBarcode" />
+    </div>
+</div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+           
+            <input type="submit" value="Audit" class="btn btn-default"/>
+        </div>
+    </div>
+
+}
+@Html.Partial("~/Views/_AlertPartial.cshtml")
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $('#lblBarcode').change(function () {
+            debugger;
+            var selected = $('#lblBarcode').val();
+            $.post('@Url.Action("checkPackage", "Stock")', { barcode: selected }, function (data) {
+                debugger;
+                if (data == "true") {
+                    debugger;
+                    alert('pass');
+                    var chk = "#chkFound" + selected;
+                    $(chk).prop('checked',true);
+                }
+                
+            });
+
+        });
+
+
+    </script>
+}

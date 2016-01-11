@@ -1,0 +1,9 @@
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\bin\Debug\EnetApplicationTests.dll.config
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\bin\Debug\EnetApplicationTests.dll
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\bin\Debug\EnetApplicationTests.pdb
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\bin\Debug\EnetApplication.dll
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\bin\Debug\BarcodeLib.dll
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\bin\Debug\EnetApplication.pdb
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\obj\Debug\EnetApplicationTests.csprojResolveAssemblyReference.cache
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\obj\Debug\EnetApplicationTests.dll
+D:\ACADS\Sem 3\.NET Enterprise\ENET\EnetMTA\EnetApplication\EnetApplicationTests\obj\Debug\EnetApplicationTests.pdb

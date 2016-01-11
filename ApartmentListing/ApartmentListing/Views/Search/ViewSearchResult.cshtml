@@ -1,0 +1,85 @@
+﻿@model ICollection<ApartmentListing.DAL.Models.Apartment>
+
+@{
+    if (Model.Count == 0)
+    {
+        <br />
+        <text> <b>There were no apartment listings of that type. </b></text>
+    };
+}
+
+<h2>Search Result</h2>
+
+<div class="wrapper">
+    <table class="table">
+        <tr>
+            <th>
+                <p><b>Address</b></p>
+            </th>
+            <th>
+                <p><b>City</b></p>
+            </th>
+            <th>
+                <p><b>Suburb</b></p>
+            </th>
+            <th>
+                <p><b>Rooms</b></p>
+            </th>
+            <th>
+                <p><b>Bathrooms</b></p>
+            </th>
+            <th>
+                <p><b>Carports</b></p>
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Suburb)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rooms)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bathrooms)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Carports)
+                </td>
+                <td>
+                    @Html.ActionLink("More Details", "FindByID", "Apartment", new { id = item.ID }, null)
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("List of all Apartments", "Index", "Apartment") &nbsp;&nbsp;
+    @Html.ActionLink("Search for more Apartments", "Index", "Search")
+</p>
+
+@section Scripts
+    {
+    <script>
+    $(document).ready(function () {
+
+        $(".highlight").css({ backgroundColor: "#FFFF88" });
+        $("body div div table tbody tr td").highlight("@ViewBag.searchedAddress", { wordsOnly: true });
+        $("body div div table tbody tr td").highlight("@ViewBag.searchedCity", { wordsOnly: true });
+        $("body div div table tbody tr td").highlight("@ViewBag.searchedSuburb", { wordsOnly: true });
+
+    });
+</script>
+}
+

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Medical Tracking system</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Enet", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                <li>@Html.ActionLink("UserList", "Index", "Users")</li>
+                <li>@Html.ActionLink("Create a DC", "CreateDistributionCenter", "Users")</li>
+                <li>@Html.ActionLink("DC List", "ListOfDCs", "Users")</li>
+                <li>@Html.ActionLink("Medicine List", "Index", "Medicines")</li>
+                <li>@Html.ActionLink("Packages", "Index", "Packages")</li>
+                <li>@Html.ActionLink("Send Packages", "SendPackage", "Packages")</li>
+                <li>@Html.ActionLink("Receive Package", "ReceivePackage", "Packages")</li>
+                <li>@Html.ActionLink("Stock", "Index", "Stock")</li>
+                <li>@Html.ActionLink("Distributions", "Distribute", "Distribution")</li>
+                <li>@Html.ActionLink("Reports", "Index", "Reports")</li>
+            </ul>
+
+        </div>
+      
+    </div>
+  @*  @Html.Partial("~/Views/Shared/_LoginPartial.cshtml")*@
+
+</div>
+   
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Desi Boyz</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
