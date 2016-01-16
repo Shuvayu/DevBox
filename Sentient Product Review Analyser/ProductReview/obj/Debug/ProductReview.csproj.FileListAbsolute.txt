@@ -1,0 +1,142 @@
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\ProductReview.dll.config
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\ProductReview.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\ProductReview.pdb
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Antlr3.Runtime.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.AspNet.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.Core.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OAuth.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OpenId.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\EntityFramework.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.Web.Infrastructure.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\System.Web.Optimization.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\System.Web.Providers.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\WebGrease.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\EntityFramework.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.Core.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OAuth.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OpenId.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\DotNetOpenAuth.AspNet.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\obj\Debug\ProductReview.csprojResolveAssemblyReference.cache
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\obj\Debug\ProductReview.dll
+c:\users\gak\documents\visual studio 2013\Projects\ProductReview\ProductReview\obj\Debug\ProductReview.pdb
+D:\ACADS\Sem 4\BIA\ProductReview\bin\ProductReview.dll.config
+D:\ACADS\Sem 4\BIA\ProductReview\bin\ProductReview.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\ProductReview.pdb
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Antlr3.Runtime.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\AspNet.ScriptManager.jQuery.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.AspNet.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.Core.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\EntityFramework.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.ScriptManager.WebForms.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.Web.Infrastructure.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Newtonsoft.Json.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\System.Web.Optimization.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\System.Web.Providers.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\WebGrease.dll
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Newtonsoft.Json.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\EntityFramework.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.Core.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\DotNetOpenAuth.AspNet.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\ACADS\Sem 4\BIA\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\ACADS\Sem 4\BIA\ProductReview\obj\Debug\ProductReview.csprojResolveAssemblyReference.cache
+D:\ACADS\Sem 4\BIA\ProductReview\obj\Debug\ProductReview.dll
+D:\ACADS\Sem 4\BIA\ProductReview\obj\Debug\ProductReview.pdb
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\ProductReview.dll.config
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\ProductReview.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\ProductReview.pdb
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Antlr3.Runtime.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.Core.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\EntityFramework.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Newtonsoft.Json.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\System.Web.Optimization.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\System.Web.Providers.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\WebGrease.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Newtonsoft.Json.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\EntityFramework.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.Core.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\GAK\Desktop\BIA\ProductReview\obj\Debug\ProductReview.csprojResolveAssemblyReference.cache
+C:\Users\GAK\Desktop\BIA\ProductReview\obj\Debug\ProductReview.dll
+C:\Users\GAK\Desktop\BIA\ProductReview\obj\Debug\ProductReview.pdb
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\ProductReview.dll.config
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\ProductReview.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\ProductReview.pdb
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Antlr3.Runtime.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.Core.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\EntityFramework.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Newtonsoft.Json.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\System.Web.Optimization.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\System.Web.Providers.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\WebGrease.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Newtonsoft.Json.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\EntityFramework.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.Core.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\shuva\Documents\Development\BIA\ProductReview\obj\Debug\ProductReview.csprojResolveAssemblyReference.cache
+C:\Users\shuva\Documents\Development\BIA\ProductReview\obj\Debug\ProductReview.dll
+C:\Users\shuva\Documents\Development\BIA\ProductReview\obj\Debug\ProductReview.pdb
