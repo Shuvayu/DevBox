@@ -95,6 +95,7 @@ namespace ConsumingAWebServiceDemo.Controllers
             return View();
         }
 
+        [NonAction]
         private List<string> GetAllCities(string country)
         {
             List<string> cityNames = new List<string>();
@@ -128,6 +129,7 @@ namespace ConsumingAWebServiceDemo.Controllers
             return cityNames;
         }
 
+        [NonAction]
         private WeatherReport GetTheWeather(string city,string country) 
         {
             // Creating object of WeatherService proxy class and calling GlobalWeatherSoap12 endpoint

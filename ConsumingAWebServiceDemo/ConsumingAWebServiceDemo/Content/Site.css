@@ -23,10 +23,3 @@ textarea {
     max-width: 280px;
 }
 
-.homeButton {
-    background: url(../Images/image.gif) no-repeat top left;
-     display: block;
-     width: 150px;
-     height: 150px;
-     text-indent: -9999px;
-}
