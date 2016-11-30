@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  table
+    tr
+      td Product Name
+      td Product Description
+    each product in products
+      tr
+        td #{product.ProductName}
+        td #{product.ProductDeswcription}
+

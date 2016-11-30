@@ -1,0 +1,6 @@
+C:\Dev\GNS-Apps\hashers\hashers\bin\Debug\hashers.exe.config
+C:\Dev\GNS-Apps\hashers\hashers\bin\Debug\hashers.exe
+C:\Dev\GNS-Apps\hashers\hashers\bin\Debug\hashers.pdb
+C:\Dev\GNS-Apps\hashers\hashers\obj\Debug\hashers.csprojResolveAssemblyReference.cache
+C:\Dev\GNS-Apps\hashers\hashers\obj\Debug\hashers.exe
+C:\Dev\GNS-Apps\hashers\hashers\obj\Debug\hashers.pdb
